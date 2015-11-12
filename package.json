@@ -26,7 +26,6 @@
     ],
     "verbose": true,
     "collectCoverage": true,
-    "setupTestFrameworkScriptFile": "./testsetup.js",
-    "preprocessCachingDisabled": true
+    "setupTestFrameworkScriptFile": "./testsetup.js"
   }
 }
