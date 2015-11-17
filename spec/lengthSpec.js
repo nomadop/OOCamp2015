@@ -11,7 +11,7 @@ describe('Length', function() {
       expect(result).toBe(true);
     });
 
-    it("should return false when two length value are diffrent", function () {
+    it("should return false when two length value are different", function () {
       let length1 = new Length(10);
       let length2 = new Length(11);
 
@@ -31,7 +31,7 @@ describe('Length', function() {
       expect(result).toBe(true);
     });
 
-    it("should return false when two length value are diffrent", function () {
+    it("should return false when two length value are different", function () {
       let length1 = new Length(10, 'mm');
       let length2 = new Length(11, 'mm');
 
@@ -51,7 +51,7 @@ describe('Length', function() {
       expect(result).toBe(true);
     });
 
-    it("should return false when two length value are diffrent", function () {
+    it("should return false when two length value are different", function () {
       let length1 = new Length(10, 'cm');
       let length2 = new Length(11, 'cm');
 
@@ -71,7 +71,7 @@ describe('Length', function() {
       expect(result).toBe(true);
     });
 
-    it("should return false when two length value are diffrent", function () {
+    it("should return false when two length value are different", function () {
       let length1 = new Length(10, 'm');
       let length2 = new Length(11, 'm');
 
@@ -81,7 +81,7 @@ describe('Length', function() {
     });
   });
 
-  describe('compairing two length object with diffrent unit', function() {
+  describe('compairing two length object with different unit', function() {
     it("should return true when length1 is 10mm and length2 is 1cm", function () {
       let length1 = new Length(10, 'mm');
       let length2 = new Length(1, 'cm');

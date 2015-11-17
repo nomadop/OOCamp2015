@@ -5,12 +5,13 @@
     "npm": ">=3.1 <4"
   },
   "dependencies": {
-    "jquery": "^2.1.4",
     "babel": "^6.0.15",
-    "babel-core": "^6.1.2",
     "babel-cli": "^6.1.2",
+    "babel-core": "^6.1.2",
     "babel-preset-es2015": "^6.1.2",
-    "jest-cli": "^0.7.1"
+    "jest-cli": "^0.7.1",
+    "jquery": "^2.1.4",
+    "secure-random": "^1.1.1"
   },
   "scripts": {
     "test": "jest"

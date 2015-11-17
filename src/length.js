@@ -5,15 +5,15 @@ export default class Length {
   }
 
   toCommonValue() {
-    switch(this.unit) {
-      case 'mm' :
-          return this.value;
-      case 'cm' :
-          return this.value * 10;
-      case 'm' :
-          return this.value * 1000;
-      default :
-          return this.value;
+    switch (this.unit) {
+      case 'mm':
+        return this.value;
+      case 'cm':
+        return this.value * 10;
+      case 'm':
+        return this.value * 1000;
+      default:
+        return this.value;
     }
   }
 
