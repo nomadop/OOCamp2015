@@ -1,6 +1,4 @@
-function generateTicket() {
-  return Date.now().toString(16) + Math.round((Math.random() * 100000)).toString(16);
-}
+import Ticket from './ticket';
 
 export default class {
   constructor() {
@@ -8,12 +6,18 @@ export default class {
   }
 
   park(car) {
-    const ticket = generateTicket();
-    this.lots[ticket] = (car);
+    if (this.isFull) {
+      return null;
+    }
+
+    const ticket = new Ticket(this);
+    this.lots[ticket.token] = car;
     return ticket;
   }
 
   get(ticket) {
-    return this.lots[ticket];
+    const car = this.lots[ticket.token];
+    delete this.lots[ticket.token];
+    return car || null;
   }
 }
