@@ -5,7 +5,7 @@ export default class {
 
   park(car) {
     const firstAvailableParkingLot = this.parkingLots.find(parkingLot => {
-      return !parkingLot.isFull;
+      return !parkingLot.isFull();
     });
     if (!firstAvailableParkingLot) {
       return null;
