@@ -44,6 +44,18 @@ describe('Parking Lot', () => {
       expect(parkingLot.get(anotherTicket)).toBe(anotherCar);
     });
   });
+  
+  it('should be full when no free space', () => {
+    const parkingLot = new ParkingLot(0);
+
+    expect(parkingLot.isFull()).toBeTruthy();
+  });
+  
+  it('should not be full when have free space', () => {
+    const parkingLot = new ParkingLot(1);
+    
+    expect(parkingLot.isFull()).toBeFalsy();
+  });
 
   it('should decrease free space when park in one car', () => {
     const parkingLot = new ParkingLot(3);
